@@ -419,13 +419,20 @@ width: 250px;
         padding: 10px 20px;
     }
 }
+@media (max-width: 540px){
+    .play .fa-play{
+        position: relative;
+        left: 400px;
+    }
+}
+
 
 @media (max-width: 480px) {
     .home-text { top: 35%; padding: 0 15px; }
     .home-text h1 { font-size: 1.8rem; }
     .play .fa-play{
         position: relative;
-        left: 400px;
+        left: 300px;
     }
     .home-text span { font-size: 0.8rem;
     margin-top: 7rem; }
