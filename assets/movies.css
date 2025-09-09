@@ -181,7 +181,8 @@ opacity: 1 !important;
 }
 
 .play .fa-play{
-  
+    position: relative;
+  left: 990px;
      background: var(--bg-color);
   padding: 15px;
   font-size: 1rem;
@@ -348,6 +349,10 @@ width: 250px;
 @media (max-width: 1200px) {
     header { padding: 20px 40px; }
     .home-text h1 { font-size: 3rem; }
+    .play .fa-play{
+        position: relative;
+        left: 900px;
+    }
     .home-text .btn { width: 90px; }
     .movies .container,
     .coming-container {
@@ -370,6 +375,10 @@ width: 250px;
         background-color: var(--bg-color);
         transition: 0.3s;
     }
+    .play .fa-play{
+        position: relative;
+        left: 720px;
+    }
     .navbar.active { right: 0; }
     .navbar a { font-size: 1.2rem; color: var(--text-color); }
     header.shadow #menu-icon { color: var(--text-color); }
@@ -382,7 +391,12 @@ width: 250px;
 @media (max-width: 768px) {
     .home-text { top: 40%; padding: 0 20px; }
     .home-text h1 { font-size: 2.2rem; }
-    .home-text span { font-size: 0.9rem; }
+    .play .fa-play{
+        position: relative;
+        left: 600px;
+    }
+    .home-text span { font-size: 0.9rem;
+     margin-top: 7rem; }
     .home-text .btn { width: 80px; }
     .container img { height: 60vh; }
     .movies .container { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
@@ -409,11 +423,22 @@ width: 250px;
 @media (max-width: 480px) {
     .home-text { top: 35%; padding: 0 15px; }
     .home-text h1 { font-size: 1.8rem; }
-    .home-text span { font-size: 0.8rem; }
-    .home-text .btn { width: 70px; }
+    .play .fa-play{
+        position: relative;
+        left: 400px;
+    }
+    .home-text span { font-size: 0.8rem;
+    margin-top: 7rem; }
+    .home-text .btn { width: 80px; }
     .movies .container,
     .coming-container { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
     .coming-container .box { width: 100px; }
+}
+@media (max-width: 375px) {
+    .play .fa-play{
+        position: relative;
+        left: 260px;
+    }
 }
 /* Default: navbar hidden on mobile */
 #menu-icon{
